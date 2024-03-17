@@ -1,0 +1,32 @@
+print("choose 1 for addition\n")
+print("choose 2 for subtraction\n")
+print("choose 3 for multiplication\n")
+print("choose 4 for division\n")
+
+while True:
+    choice=int(input("enter your choice\n"))
+    if choice==1:
+        a=int(input("enter first number\n"))
+        b=int(input("enter second number\n"))
+        sum=a+b
+        print("result=",sum)
+    elif choice==2:
+        a=int(input("enter first number\n"))
+        b=int(input("enter second number\n"))
+        diff=a-b
+        print("result=",diff)
+    elif choice==3:
+        a=int(input("enter first number\n"))
+        b=int(input("enter second number\n"))
+        multi=a*b
+        print("result=",multi)
+    elif choice==4:
+        a=int(input("enter first number\n"))
+        b=int(input("enter second number\n"))
+        div=a/b
+        print("result=",div)
+    cal=input("do you want to continue?(y/n)")
+    if cal=="n":
+        break
+else:
+    print("invalid input")
